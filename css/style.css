@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00c9ff), to(#92fe9d));
+  background: linear-gradient(#00c9ff, #92fe9d);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  max-width: 100%;
+  width: 62%;
+  height: 65%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: #f6f5f5;
+}
+
+.container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+}
+
+.container .content .question {
+  margin-left: 30px;
+  max-width: 100%;
+}
+
+.container .content .question .question-list .ques {
+  max-width: 100%;
+  width: 120%;
+  height: 40px;
+  border-bottom: 1px solid #111;
+  position: relative;
+}
+
+.container .content .question .question-list .ques .fas {
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+  right: -300px;
+  bottom: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.container .content .question .question-list .ques .fas:hover {
+  color: #28abb9;
+}
+
+#picture {
+  max-width: 100%;
+  position: absolute;
+  left: 240px;
+  bottom: 50px;
+}
+
+.collapsible {
+  display: none;
+  width: 300px;
+  max-width: 120%;
+  height: 300px;
+  position: absolute;
+  z-index: 2;
+  background: #111;
+}
+
+@media screen and (max-width: 925px) {
+  body {
+    font-size: 12px;
+  }
+  #picture {
+    display: none;
+  }
+  .question {
+    width: 100%;
+    height: 130%;
+    padding: 20px;
+    padding-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .question .fas {
+    position: absolute;
+    left: 225px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
